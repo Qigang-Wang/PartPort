@@ -1,0 +1,28 @@
+{
+  "$schema": "https://go.kicad.org/api/schemas/v1",
+  "identifier": "com.partport.kicad10",
+  "name": "PartPort",
+  "description": "Search LCSC/SZLCSC and import EasyEDA symbols, footprints and 3D models",
+  "runtime": {
+    "type": "python",
+    "min_version": "3.9"
+  },
+  "actions": [
+    {
+      "identifier": "import-lcsc-part",
+      "name": "Search and Import Parts",
+      "description": "Search LCSC/SZLCSC and import a component into KiCad",
+      "show-button": true,
+      "scopes": [
+        "schematic"
+      ],
+      "entrypoint": "partport_plugin.py",
+      "icons-light": [
+        "resources/icon-light.png"
+      ],
+      "icons-dark": [
+        "resources/icon-dark.png"
+      ]
+    }
+  ]
+}

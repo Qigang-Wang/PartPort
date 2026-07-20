@@ -1,0 +1,4 @@
+JLC2KiCadLib==1.2.3
+KicadModTree==1.1.2
+kicad-python==0.7.1
+requests>=2.31,<3
